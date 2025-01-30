@@ -131,7 +131,7 @@ body::before {
   background-color: white;
   color: var(--primary-color);
   border: 0.1875rem solid var(--primary-color);
-  outline: 0.125rem solid white;
+  outline: 0.125rem solid white; /* criando um contorno branco ao redor da borda ja existente */
 }
 
 .s-controller__line {
