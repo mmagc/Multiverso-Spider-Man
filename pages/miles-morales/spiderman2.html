@@ -8,14 +8,36 @@
   <title>Spider Man | Multiverso</title>
   <link rel="shortcut icon" href="assets/images/icons/spider.svg" type="image/x-icon">
   <link href="../../assets/css/internal.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css"/>
 </head>
+<style>
+
+.s-wrapper {
+  display: flex;
+  height: 100vh;
+  flex-flow: row nowrap; 
+  background: url("/assets/images/spiderman-miles/movie-01/gallery/spider-man-into-the-spider-verse-backgorund.jpeg") no-repeat center center/cover; 
+}
+
+.s-wrapper .s-main-content .s-logo img {
+    margin-top: 50px;
+    margin-left: 0;
+    margin-bottom: 30px;
+    height: 19vh;
+}
+
+  .gallery ul li a img{
+  border:solid 6px white;
+  border-radius: 15px;
+  height: 20vh;
+}
+
+
+</style>
 
 <body>
   <div class="s-wrapper">
 
-    <video autoplay loop>
-      <source src="../../assets/videos/amazing-spiderman2-2014-trailer.mp4" type="video/mp4" />
-    </video>
 
     <!--  Coluna da esquerda com menu (Left Column with menu)  -->
     <div class="s-left-column">
@@ -36,19 +58,19 @@
     <div class="s-main-content">
       <div class="s-main-content__top">
         <div class="s-logo">
-          <img src="../../assets/images/spiderman-andrew/movie-02/logo.png" alt="Spiderman 2 (2005)"
+          <img src="../../assets/images/spiderman-miles/movie-02/logo2-miles.png" alt="Spiderman 2 (2005)"
             title="Spiderman 2 (2005)" />
         </div>
 
         <div class="s-description">
           <div class="pills">
             <ul>
-              <li>Ano: 2005</li>
+              <li>Ano: 2023</li>
               <li>Diretor: Sam Raimi</li>
             </ul>
           </div>
           <div class="s-description__text">
-            <p><strong>Sinopse:</strong>&nbsp;Quando uma falha na experiência de fusão nuclear resulta em uma explosão que mata sua esposa, o Dr. Otto Octavius é transformado em Dr. Octopus, um ciborgue com tentáculos de metal. Doc Ock culpa o Homem-Aranha pelo acidente e quer vingança. Enquanto isso, o alter ego do herói, Peter Parker, perde seus poderes. Para complicar as coisas, o seu melhor amigo odeia o Homem-Aranha e sua amada fica noiva..</p>
+            <p><strong>Sinopse:</strong>&nbsp;Depois de se reunir com Gwen Stacy, Homem-Aranha é jogado no multiverso. Lá, o super-herói aracnídeo encontra uma numerosa equipe encarregada de proteger sua própria existência.</p>
           </div>
         </div>
 
@@ -71,13 +93,30 @@
       <div class="s-main-content__bottom">
         <div class="gallery">
           <ul>
-            <li><a href="#"><img src="../../assets/images/spiderman-andrew/movie-02/gallery/image-01.png" alt=""></a></li>
-            <li><a href="#"><img src="../../assets/images/spiderman-andrew/movie-02/gallery/image-02.png" alt=""></a></li>
-            <li><a href="#"><img src="../../assets/images/spiderman-andrew/movie-02/gallery/image-03.png" alt=""></a></li>
+            <li>
+              <a data-fancybox href="../../assets/images/spiderman-miles/movie-02/gallery/imagem-001.jpg">
+                <img src="../../assets/images/spiderman-miles/movie-02/gallery/imagem-001.jpg" alt="">
+              </a>
+            </li>
+            <li>
+              <a data-fancybox href="../../assets/images/spiderman-miles/movie-02/gallery/imagem-002.webp">
+                <img src="../../assets/images/spiderman-miles/movie-02/gallery/imagem-002.webp" alt="">
+              </a>
+            </li>
+            <li>
+              <a data-fancybox href="../../assets/images/spiderman-miles/movie-02/gallery/imagem-003.webp">
+                <img src="../../assets/images/spiderman-miles/movie-02/gallery/imagem-003.webp" alt="">
+              </a>
+            </li>
           </ul>
         </div>
       </div>
     </div>
   </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+  <script>
+    //  JavaScript will go here
+  </script>
 </body>
 </html>
