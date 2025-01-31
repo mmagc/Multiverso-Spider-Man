@@ -54,15 +54,19 @@ body::before {
 }
 
 .s-card:nth-child(1) {
-  transform: rotateY(0deg) translateZ(50vw);
+  transform: rotateY(0deg)  translateZ(50vw);
 }
 
 .s-card:nth-child(2) {
-  transform: rotateY(120deg) translateZ(50vw);
+  transform: rotateY(90deg)  translateZ(50vw);
 }
 
 .s-card:nth-child(3) {
-  transform: rotateY(240deg) translateZ(50vw);
+  transform: rotateY(180deg) translateZ(50vw);
+}
+
+.s-card:nth-child(4) {
+  transform: rotateY(270deg) translateZ(50vw);
 }
 
 .s-card__background {
@@ -126,6 +130,9 @@ body::before {
 .s-controller__button:nth-child(2) {
   margin: 0 3.75rem;
 }
+.s-controller__button:nth-child(3) {
+  margin-right: 3.5rem;
+}
 
 .s-controller__button--active {
   background-color: white;
@@ -165,6 +172,10 @@ body#spider-man-03-hovered::before {
   background-image: url('../images/pic-sm-bg-03.jpg');
 }
 
+body#spider-man-04-hovered::before {
+  background-image: url('../images/pic-sm-bg-04.png');
+}
+
 body[id^="spider-man-"]::before {
   opacity: 1;
 }
@@ -183,5 +194,5 @@ body[id^="spider-man-"] .s-card:not(.s-card--hovered) {
   justify-content: center;
   width: calc(100vw / 3 - 10%);
   transform-style: preserve-3d;
-  transition: transform 0.4s ease-in;
+  transition: transform 0.4s ease-in-out;
 }
